@@ -1,0 +1,197 @@
+<html>
+<body>
+<h1> Live Stream CCTV by IT-Bhayangkara </h1>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<h3> Depan Grandmall Kranji </h3>
+<video id="video" controls></video>
+<h3> Depan Pasar Kranji </h3>
+<video id="video11" controls></video>
+<h3> Simpang Keluar Terminal </h3>
+<video id="video2" controls></video>
+<h3> Perempatan Stasiun Bekasi </h3>
+<video id="video3" controls></video>
+<h3> Perempatan RS Bella </h3>
+<video id="video4" controls></video>
+<h3> Depan Lotte Mart </h3>
+<video id="video5" controls></video>
+<h3> Simpang Lotte Mart </h3>
+<video id="video7" controls></video>
+<h3> Pom Bensin Kantor Walikota Bekasi</h3>
+<video id="video6" controls></video>
+<h3> Simpang Bulak Kapal</h3>
+<video id="video8" controls></video>
+<h3> Simpang Kartini</h3>
+<video id="video9" controls></video>
+<h3> Simpang Tol Barat</h3>
+<video id="video10" controls></video>
+<h3> Alun Alun Bekasi</h3>
+<video id="video12" controls></video>
+<h3> Simpang BCP</h3>
+<video id="video13" controls></video>
+<style>
+video{
+position : relative;
+width : 100%;
+top : 0;
+height : auto;
+}
+</style>
+<script>
+if(Hls.isSupported())
+{
+var video = document.getElementById('video');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_13.m3u8');
+hls.attachMedia(video);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video2 = document.getElementById('video2');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_28.m3u8');
+hls.attachMedia(video2);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video2.play();
+video2.height="400";
+});
+}
+
+if(Hls.isSupported())
+{
+var video3 = document.getElementById('video3');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/stasiun_bekasi.m3u8');
+hls.attachMedia(video3);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video3.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video4 = document.getElementById('video4');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/rs_bela.m3u8');
+hls.attachMedia(video4);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video4.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video5 = document.getElementById('video5');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/proyek_bekasi.m3u8');
+hls.attachMedia(video5);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video5.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video6 = document.getElementById('video6');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/pintu_utara_pemkot.m3u8');
+hls.attachMedia(video6);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video6.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video7 = document.getElementById('video7');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_30.m3u8');
+hls.attachMedia(video7);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video7.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video8 = document.getElementById('video8');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_29.m3u8');
+hls.attachMedia(video8);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video8.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video9 = document.getElementById('video9');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_24.m3u8');
+hls.attachMedia(video9);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video9.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video10 = document.getElementById('video10');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_17.m3u8');
+hls.attachMedia(video10);
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video10.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video11 = document.getElementById('video11');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_12.m3u8');
+hls.attachMedia(video11)
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video11.play();
+});
+}
+
+if(Hls.isSupported())
+{
+var video12 = document.getElementById('video12');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_12.m3u8');
+hls.attachMedia(video12)
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video12.play();
+});
+}
+if(Hls.isSupported())
+{
+var video13 = document.getElementById('video13');
+var hls = new Hls();
+hls.loadSource('https://smartcity.bekasikota.go.id/service/cctv/cctv_BPTJ_@_10_4_40_12.m3u8');
+hls.attachMedia(video13)
+hls.on(Hls.Events.MANIFEST_PARSED,function()
+{
+video13.play();
+});
+}
+</script>
+</body>
+</html>
